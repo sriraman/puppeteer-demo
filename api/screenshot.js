@@ -94,6 +94,7 @@ module.exports = async (req, res) => {
     // return the file!
     res.end(file);
   } catch (e) {
+    console.log(e);
     res.statusCode = 500;
     res.json({
       body: "Sorry, Something went wrong!",
